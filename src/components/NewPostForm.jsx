@@ -1,17 +1,11 @@
 import { Form } from 'react-router-dom';
-<<<<<<< HEAD
 
-=======
->>>>>>> Fetch Error Handling through new Router
+// Fetch Error Handling through new Router
 import classes from './NewPostForm.module.css';
 
 function NewPostForm({ onCancel, submitting }) {
   return (
-<<<<<<< HEAD
-    <Form className={classes.form} action="/blog/new" method="post">
-=======
     <Form className={classes.form} method="post" action="/blog/new">
->>>>>>> Fetch Error Handling through new Router
       <fieldset>
         <label htmlFor="title">Title</label>
         <input id="title" type="text" name="title" required minLength={5} />

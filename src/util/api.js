@@ -17,7 +17,6 @@ export async function getSlowPosts() {
   return response.json();
 }
 
-<<<<<<< HEAD
 export async function getPost(id) {
   return fetch('https://jsonplaceholder.typicode.com/posts/' + id);
 }
@@ -30,11 +29,6 @@ export async function savePost(data) {
 
   if (post.title.trim().length < 5 || post.body.trim().length < 10) {
     return { isError: true, message: 'Invalid input data provided.' };
-=======
-export async function savePost(post) {
-  if (post.post.title.trim().length < 5 || post.post.body.trim().length < 10) {
-    throw { message: 'Invalid input data provided.', status: 422 };
->>>>>>> Fetch Error Handling through new Router
   }
 
   const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
